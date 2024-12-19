@@ -1,5 +1,6 @@
 @use 'variaveis';
 @use 'hero';
+@use 'shots';
 
 @font-face {
     font-family: SpaceMono;
@@ -142,12 +143,14 @@ body {
 
     img {
         max-width: 100%;
+        border-radius: 10px;
     }
 
     &__text_container {
         padding: 0 2vw;
 
         h2 {
+            margin-top: 24px;
             margin-bottom: 24px;
         }
     }
