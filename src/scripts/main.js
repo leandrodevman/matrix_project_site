@@ -17,7 +17,7 @@ window.addEventListener('scroll', function() {
     }
 })
 
-//Seção de atrações, programção das abas
+//Seção de atrações, programação das abas
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function(botao) {
         const abaAlvo = botao.target.dataset.tabButton;

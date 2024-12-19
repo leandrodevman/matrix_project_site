@@ -51,6 +51,7 @@
             margin: 0 1vw;
             cursor: pointer;
             border-bottom: 5px solid transparent;
+            transition: 0.5s ease;
 
             &--is-active {
                 border-color: variaveis.$corTextoSecundario;
