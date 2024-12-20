@@ -1,15 +1,10 @@
-// evento que executa assim que o DOM carrega
 const buttons = document.querySelectorAll('[data-tab-button]');
-// colchetes para selecionar com base em um atributo
 const questions = document.querySelectorAll('[data-faq-question]');
-
 const heroSection = document.querySelector('.hero');
 const alturaHero = heroSection.clientHeight;
-// .clientHeight para resgatar a altura da sessão
 
 window.addEventListener('scroll', function() {
     const posicaoAtual = window.scrollY;
-    //window.scrollY resgata uma coordenada na rolagem vertical
     if (posicaoAtual < alturaHero) {
         ocultaElementosDoHeader();
     } else {
@@ -17,7 +12,6 @@ window.addEventListener('scroll', function() {
     }
 })
 
-//Seção de atrações, programação das abas
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function(botao) {
         const abaAlvo = botao.target.dataset.tabButton;
@@ -29,7 +23,6 @@ for (let i = 0; i < buttons.length; i++) {
     })
 }
 
-//Seção FAQ, accordion
 for (let i=0; i < questions.length; i++) {
     questions[i].addEventListener('click', abreOuFechaResposta);
 }
